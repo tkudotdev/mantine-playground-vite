@@ -1,0 +1,73 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "pnpm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "dev": {
+      "name": "dev",
+      "command": "pnpm dev",
+      "runAtStart": true,
+      "preview": {
+        "port": 5173
+      }
+    },
+    "build": {
+      "name": "build",
+      "command": "pnpm build"
+    },
+    "preview": {
+      "name": "preview",
+      "command": "pnpm preview"
+    },
+    "typecheck": {
+      "name": "typecheck",
+      "command": "pnpm typecheck"
+    },
+    "lint": {
+      "name": "lint",
+      "command": "pnpm lint"
+    },
+    "lint:eslint": {
+      "name": "lint:eslint",
+      "command": "pnpm lint:eslint"
+    },
+    "lint:stylelint": {
+      "name": "lint:stylelint",
+      "command": "pnpm lint:stylelint"
+    },
+    "prettier": {
+      "name": "prettier",
+      "command": "pnpm prettier"
+    },
+    "prettier:write": {
+      "name": "prettier:write",
+      "command": "pnpm prettier:write"
+    },
+    "vitest": {
+      "name": "vitest",
+      "command": "pnpm vitest"
+    },
+    "vitest:watch": {
+      "name": "vitest:watch",
+      "command": "pnpm vitest:watch"
+    },
+    "test": {
+      "name": "test",
+      "command": "pnpm test"
+    },
+    "storybook": {
+      "name": "storybook",
+      "command": "pnpm storybook"
+    },
+    "storybook:build": {
+      "name": "storybook:build",
+      "command": "pnpm storybook:build"
+    }
+  }
+}
